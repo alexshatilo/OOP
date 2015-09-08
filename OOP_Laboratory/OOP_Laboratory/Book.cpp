@@ -6,44 +6,45 @@ Book::Book()
 {
 	cout << "Вызов конструктора без параметров" << endl;
 	id = 0;
-	strcpy_s(name, "0");
-	strcpy_s(author, "0");
-	strcpy_s(publish, "0");
+	name = "0";
+	author = "0";
+	publish = "0";
 	year = 0;
 	number = 0;
 	price = 0;
-	strcpy_s(type, "0");
+	type = "0";
 }
 
 Book::Book(int ID, char* NAME, char* AUTHOR, char* PUBLISH, int YEAR, int NUMBER, int PRICE, char* TYPE)
 {
 	cout << "Вызов конструктора c параметрами" << endl;
 	id = ID;
-	strcpy_s(name, NAME);
-	strcpy_s(author, AUTHOR);
-	strcpy_s(publish, PUBLISH);
+	//name = new char[strlen(NAME)+1];
+	name = NAME;
+	author = AUTHOR;
+	publish = PUBLISH;
 	year = YEAR;
 	number = NUMBER;
 	price = PRICE;
-	strcpy_s(type, TYPE);
+	type = TYPE;
 }
 
-/*Book::Book(const Book &b)
+Book::Book(const Book &b)
 {
-cout << "Вызов конструктора копирования" << endl;
-id = b.id;
-strcpy_s(name, b.name);
-strcpy_s(author, b.author);
-strcpy_s(publish, b.publish);
-year = b.year;
-number = b.number;
-price = b.price;
-strcpy_s(type, b.type);
-}*/
+	cout << "Вызов конструктора копирования" << endl;
+	id = b.id;
+	name = b.name;
+	author = b.author;
+	publish = b.publish;
+	year = b.year;
+	number = b.number;
+	price = b.price;
+	type = b.type;
+}
 
 Book::~Book()
 {
-cout << "Вызов деструктора" << endl;
+	cout << "Вызов деструктора" << endl;
 }
 
 void Book::setId(int ID)
@@ -53,17 +54,17 @@ void Book::setId(int ID)
 
 void Book::setName(char* NAME)
 {
-	strcpy_s(name, NAME);
+	name=NAME;
 }
 
 void Book::setAuthor(char* AUTHOR)
 {
-	strcpy_s(author, AUTHOR);
+	author = AUTHOR;
 }
 
 void Book::setPublish(char* PUBLISH)
 {
-	strcpy_s(publish, PUBLISH);
+	publish = PUBLISH;
 }
 
 void Book::setYear(int Year)
@@ -83,7 +84,7 @@ void Book::setPrice(int PRICE)
 
 void Book::setType(char* TYPE)
 {
-	strcpy_s(type, TYPE);
+	type = TYPE;
 }
 
 int Book::getId(void)
@@ -138,17 +139,3 @@ void Book::Print()
 	cout << "Тип переплета: " << type << endl;
 }
 
-void Book::bookauthor(char aut[20])
-{
-	if (strcmp(aut, author) == 0) cout << name << endl;
-}
-
-void Book::bookpublish(char pub[20])
-{
-	if (strcmp(pub, publish) == 0) cout << name << endl;
-}
-
-void Book::bookyear(int yea)
-{
-	if (year > yea) cout << name << endl;
-}

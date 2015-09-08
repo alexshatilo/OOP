@@ -8,18 +8,18 @@ class Book
 {
 private:
 	int id;
-	char name[20];
-	char author[20];
-	char publish[20];
+	char *name;
+	char *author;
+	char *publish;
 	int year;
 	int number;
 	int price;
-	char type[20];
+	char *type;
 
 public:
 	Book();
 	Book(int, char*, char*, char*, int, int, int, char*);
-	//Book(const Book &);
+	Book(const Book &);
 	~Book();
 
 	void setId(int);
@@ -41,7 +41,4 @@ public:
 	char* getType();
 
 	void Print();
-	void bookauthor(char*);
-	void bookpublish(char*);
-	void Book::bookyear(int);
 };
