@@ -81,10 +81,10 @@
   <ItemGroup>
     <ClInclude Include="gruz.h" />
     <ClInclude Include="pass.h" />
-    <ClInclude Include="samolet.h" />
+    <ClInclude Include="transport.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
-    <ClInclude Include="transport.h" />
+    <ClInclude Include="air.h" />
     <ClInclude Include="voen.h" />
   </ItemGroup>
   <ItemGroup>
@@ -95,7 +95,7 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
     </ClCompile>
-    <ClCompile Include="transport.cpp" />
+    <ClCompile Include="air.cpp" />
     <ClCompile Include="voen.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

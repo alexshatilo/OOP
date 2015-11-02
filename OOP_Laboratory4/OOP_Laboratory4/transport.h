@@ -1,18 +1,17 @@
 #pragma once
-#include "samolet.h"
 
-class Transport:
-	public Samolet
+class Transport
 {
+protected:
+	char *name;
+	static Transport *head;
 public:
 	Transport *next;
-	Transport(void);
-	Transport(char *);
-	virtual void setName(char *Name);
-	virtual const char* getName()const;
-	void print(void);
-	static void show();
-	virtual void add();
-	virtual ~Transport(void);
+	Transport(void){};
+	Transport(char *Name){ name = Name; };
+	virtual void setName( char *Name) = 0;
+	virtual const char* getName()const = 0;
+	virtual void print(void) = 0;
+	virtual void add() = 0;
+	virtual ~Transport(void){};
 };
-

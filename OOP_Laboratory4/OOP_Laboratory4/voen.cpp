@@ -10,7 +10,7 @@ Voen::Voen(void)
 	cout << "Вызывается конструктор без параметров военного самолета" << endl;
 }
 
-Voen::Voen(char *Name, int Weight) : Transport(Name)
+Voen::Voen(char *Name, int Weight) : Air(Name)
 {
 	weight = Weight;
 	cout << "Вызывается конструктор c параметрами военного самолета" << endl;
@@ -29,7 +29,7 @@ void Voen::print()
 
 void Voen::show()
 {
-	Samolet *p = head;
+	Transport *p = head;
 	while (p)
 	{
 		p->print();

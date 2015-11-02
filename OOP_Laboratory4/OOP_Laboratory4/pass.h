@@ -1,8 +1,8 @@
 #pragma once
-#include "transport.h"
+#include "air.h"
 
 class Pass:
-	public Transport
+	public Air
 {
 	int kolm;
 public:

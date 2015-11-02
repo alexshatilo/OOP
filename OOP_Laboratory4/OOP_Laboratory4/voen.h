@@ -1,8 +1,8 @@
 #pragma once
-#include "transport.h"
+#include "air.h"
 
 class Voen:
-	public Transport
+	public Air
 {
 	int weight;
 public:

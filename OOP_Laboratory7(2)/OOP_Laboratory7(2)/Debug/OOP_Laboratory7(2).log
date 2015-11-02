@@ -1,0 +1,16 @@
+﻿Сборка начата 26.10.2015 16:30:53.
+     1>Проект "D:\ПОИТ\2 курс\Объектно-ориентированное программирование\3 семестр\GitHub\OOP\OOP_Laboratory7(2)\OOP_Laboratory7(2)\OOP_Laboratory7(2).vcxproj" в узле 2 (целевые объекты Build).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\OOP_Laboratory7(2).pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt "OOP_Laboratory7(2).cpp"
+         OOP_Laboratory7(2).cpp
+     1>d:\поит\2 курс\объектно-ориентированное программирование\3 семестр\github\oop\oop_laboratory7(2)\oop_laboratory7(2)\oop_laboratory7(2).cpp(103): warning C4715: Matrica<Book>::operator==: значение возвращается не при всех путях выполнения
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\ПОИТ\2 курс\Объектно-ориентированное программирование\3 семестр\GitHub\OOP\OOP_Laboratory7(2)\Debug\OOP_Laboratory7(2).exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\ПОИТ\2 курс\Объектно-ориентированное программирование\3 семестр\GitHub\OOP\OOP_Laboratory7(2)\Debug\OOP_Laboratory7(2).pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\ПОИТ\2 курс\Объектно-ориентированное программирование\3 семестр\GitHub\OOP\OOP_Laboratory7(2)\Debug\OOP_Laboratory7(2).lib" /MACHINE:X86 Debug\book.obj
+         "Debug\OOP_Laboratory7(2).obj"
+         Debug\stdafx.obj
+         OOP_Laboratory7(2).vcxproj -> D:\ПОИТ\2 курс\Объектно-ориентированное программирование\3 семестр\GitHub\OOP\OOP_Laboratory7(2)\Debug\OOP_Laboratory7(2).exe
+     1>Сборка проекта "D:\ПОИТ\2 курс\Объектно-ориентированное программирование\3 семестр\GitHub\OOP\OOP_Laboratory7(2)\OOP_Laboratory7(2)\OOP_Laboratory7(2).vcxproj" завершена (целевые объекты Build).
+
+Сборка успешно завершена.
+
+Затраченное время: 00:00:02.74

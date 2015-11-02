@@ -10,7 +10,7 @@ Gruz::Gruz(void)
 	cout << "Вызывается конструктор без параметров грузового самолета" << endl;
 }
 
-Gruz::Gruz(char *Name, int Kolg) : Transport(Name)
+Gruz::Gruz(char *Name, int Kolg) : Air(Name)
 {
 	kolg = Kolg;
 	cout << "Вызывается конструктор c параметрами грузового самолета" << endl;
@@ -29,7 +29,7 @@ void Gruz::print()
 
 void Gruz::show()
 {
-	Samolet *p = head;
+	Transport *p = head;
 	while (p)
 	{
 		p->print();

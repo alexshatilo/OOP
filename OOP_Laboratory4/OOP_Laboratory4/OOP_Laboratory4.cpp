@@ -11,12 +11,12 @@
 
 using namespace std;
 
-Samolet *Samolet::head = NULL;
+Transport *Transport::head = NULL;
 
 int _tmain(int argc, _TCHAR* argv[])
 {
 	setlocale(LC_ALL, "Russian");
-	Transport transport("Самолеты");
+	Air transport("Самолеты");
 	transport.add();
 
 	Voen voen("ИЛ-5", 1000);
